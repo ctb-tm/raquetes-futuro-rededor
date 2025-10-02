@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico: Projeto Raquetes para o Futuro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --cor-primaria: #0078d4; /* Azul Microsoft Forms, para um toque diferente */
+            --cor-secundaria: #107c10; /* Verde associado a projetos sociais */
+            --cor-texto-escuro: #2c3e50;
+            --cor-texto-claro: #ffffff;
+            --cor-fundo: #f4f4f9;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto-escuro);
+            padding: 2rem 0;
+        }
+
+        .container-a4 {
+            width: 100%; max-width: 1123px; min-height: 794px;
+            background: var(--cor-texto-claro); padding: 2.5rem;
+            border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+        }
+
+        header { text-align: center; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+        
+        header .imagem-principal {
+            width: 100%; height: 250px; object-fit: cover;
+            border-radius: 10px; margin-bottom: 1.5rem;
+            background-color: #e0e0e0; /* Cor de fundo para o placeholder da imagem */
+        }
+
+        .header-titulo {
+            display: flex; justify-content: center; align-items: center;
+            gap: 1.5rem; flex-wrap: wrap;
+        }
+        
+        .header-titulo .logo-ctb { height: 70px; width: auto; }
+        .header-titulo h1 { color: var(--cor-primaria); font-size: 2.6rem; font-weight: 700; margin: 0; }
+        header .subtitulo { font-size: 1.2rem; font-weight: 300; margin-top: 0.5rem; }
+
+        .titulo-seccao {
+            font-size: 1.8rem; font-weight: 600; color: var(--cor-texto-escuro);
+            margin-bottom: 1.5rem; text-align: center;
+            border-bottom: 2px solid var(--cor-secundaria);
+            padding-bottom: 0.5rem; display: inline-block;
+        }
+        
+        .center-title { text-align: center; margin-bottom: 2rem; }
+        .sobre-projeto p { text-align: center; font-size: 1rem; line-height: 1.6; max-width: 800px; margin: 0 auto 2.5rem auto; }
+
+        .grelha { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-bottom: 2.5rem; }
+        
+        .cartao {
+            background-color: var(--cor-primaria); color: var(--cor-texto-claro);
+            border-radius: 10px; padding: 1.5rem; text-align: center;
+            flex-basis: 180px; flex-grow: 1;
+        }
+
+        .cartao .icone { font-size: 3rem; font-weight: 700; line-height: 1.1; }
+        .cartao .titulo-cartao { font-size: 1.2rem; font-weight: 600; margin-top: 0.5rem; }
+        .cartao .descricao { font-size: 0.9rem; font-weight: 300; }
+
+        .cartao-texto {
+            background-color: #eef1f5; color: var(--cor-texto-escuro);
+            border-radius: 10px; padding: 1.5rem; text-align: left;
+            flex-basis: 280px; flex-grow: 1;
+        }
+        .cartao-texto h3 { font-size: 1.1rem; font-weight: 600; color: var(--cor-primaria); margin-bottom: 0.5rem; }
+        .cartao-texto p, .cartao-texto li { font-size: 0.9rem; line-height: 1.5; }
+        .cartao-texto ul { list-style-position: inside; padding-left: 0.5rem; }
+
+        .valor-container {
+            background: linear-gradient(135deg, var(--cor-primaria), #005a9e); color: var(--cor-texto-claro);
+            border-radius: 10px; padding: 2rem; margin-bottom: 2.5rem; text-align: center;
+        }
+        .valor-container h2 { font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem; border: none; }
+        .valor-grid { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; }
+        .valor-item h3 { font-size: 1.2rem; font-weight: 400; opacity: 0.9; }
+        .valor-item .valor { font-size: 1.8rem; font-weight: 700; color: var(--cor-secundaria); }
+
+        footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #ddd; text-align: center; }
+        footer p { font-size: 0.9rem; line-height: 1.5; }
+        footer a { color: var(--cor-primaria); text-decoration: none; font-weight: 600; }
+        footer a:hover { text-decoration: underline; }
+
+        @media print {
+            body { padding: 0; background-color: #fff; }
+            .container-a4 {
+                width: 297mm; height: 210mm; margin: 0;
+                box-shadow: none; border-radius: 0; padding: 15mm;
+                page-break-after: always;
+            }
+            .container-a4:last-child { page-break-after: avoid; }
+            header .imagem-principal { height: 180px; }
+            .header-titulo .logo-ctb { height: 60px; }
+            .header-titulo h1 { font-size: 22pt; }
+            .titulo-seccao { font-size: 16pt; }
+            body, p, li { font-size: 9pt; }
+            .cartao-texto p, .cartao-texto li { font-size: 8.5pt; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container-a4" id="pagina-1">
+        <header>
+            <img src="tenisdemesa.jpg" alt="Crianças a jogar ténis de mesa" class="imagem-principal">
+            
+            <div class="header-titulo">
+                <img src="ctb.png" alt="Logomarca do Clube dos Tenistas da Bahia" class="logo-ctb">
+                <h1>Raquetes para o Futuro</h1>
+            </div>
+
+            <p class="subtitulo">Esporte e Cidadania para Crianças e Adolescentes em Salvador</p>
+        </header>
+
+        <section class="sobre-projeto">
+            <div class="center-title"><h2 class="titulo-seccao">Objetivo do Projeto</h2></div>
+            <p>Promover o desenvolvimento integral de 80 crianças e adolescentes em situação de vulnerabilidade social, utilizando o ténis de mesa como uma poderosa ferramenta de saúde preventiva, inclusão social e formação cidadã. O projeto cria um ambiente seguro no contraturno escolar para combater o sedentarismo e a ociosidade, promovendo valores como disciplina, resiliência e trabalho em equipa[cite: 248, 249, 250].</p>
+        </section>
+
+        <section class="info-chave">
+             <div class="center-title"><h2 class="titulo-seccao">Informações Chave</h2></div>
+             <div class="grelha">
+                <div class="cartao"><div class="icone">🎯</div><div class="titulo-cartao">Público-Alvo</div><p class="descricao">80 Crianças e Adolescentes</p></div>
+                <div class="cartao"><div class="icone">📍</div><div class="titulo-cartao">Local</div><p class="descricao">Bairro São Rafael, Salvador/BA</p></div>
+                <div class="cartao"><div class="icone">⏰</div><div class="titulo-cartao">Duração</div><p class="descricao">12 meses</p></div>
+             </div>
+        </section>
+
+        <section class="indicadores-impacto">
+            <div class="center-title"><h2 class="titulo-seccao">Indicadores de Impacto</h2></div>
+            <div class="grelha">
+                <div class="cartao-texto">
+                    <h3>Quantitativos</h3>
+                    <ul>
+                        <li>Meta de 80 crianças e adolescentes inscritos[cite: 287, 291].</li>
+                        <li>Frequência mensal superior a 85%[cite: 292].</li>
+                        <li>Mínimo de 8 horas/aula por semana[cite: 293].</li>
+                        <li>4 palestras anuais sobre saúde[cite: 294].</li>
+                    </ul>
+                </div>
+                <div class="cartao-texto">
+                    <h3>Qualitativos</h3>
+                    <ul>
+                        <li>Índice de satisfação superior a 90% (pesquisa semestral)[cite: 297].</li>
+                        <li>Desenvolvimento de habilidades socioemocionais (relatório semestral)[cite: 298].</li>
+                        <li>Aumento da conscientização sobre hábitos saudáveis[cite: 299].</li>
+                    </ul>
+                </div>
+                <div class="cartao-texto">
+                    <h3>Impacto Social</h3>
+                    <ul>
+                        <li>Acompanhamento do boletim escolar de 100% dos participantes[cite: 301].</li>
+                        <li>Meta de melhoria do rendimento escolar em 70% dos casos[cite: 301].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+         <section class="ods">
+             <div class="center-title"><h2 class="titulo-seccao">Objetivos de Desenvolvimento Sustentável (ODS)</h2></div>
+             <div class="grelha">
+                <div class="cartao"><div class="icone">1</div><p class="descricao">Erradicação da Pobreza</p></div>
+                <div class="cartao"><div class="icone">3</div><p class="descricao">Saúde e Bem-Estar</p></div>
+                <div class="cartao"><div class="icone">4</div><p class="descricao">Educação de Qualidade</p></div>
+                <div class="cartao"><div class="icone">5</div><p class="descricao">Igualdade de Gênero</p></div>
+                <div class="cartao"><div class="icone">10</div><p class="descricao">Redução das Desigualdades</p></div>
+             </div>
+        </section>
+    </main>
+
+    <main class="container-a4" id="pagina-2">
+        <section class="oportunidades-patrocinador">
+            <div class="center-title"><h2 class="titulo-seccao">Oportunidades para o Patrocinador</h2></div>
+            <div class="grelha">
+                <div class="cartao-texto">
+                    <h3>Visibilidade e Branding</h3>
+                    <p>Ampla exposição da marca como "Apresentadora Oficial" em todos os materiais: uniformes, equipamentos, banners e redes sociais. Associação da marca a uma causa de alto impacto social[cite: 349, 350].</p>
+                </div>
+                <div class="cartao-texto">
+                    <h3>Engajamento e Conteúdo</h3>
+                    <p>Produção de um minidocumentário sobre o impacto do projeto, além de conteúdos mensais para redes sociais, reforçando o engajamento e a comunicação estratégica da parceria[cite: 354, 355].</p>
+                </div>
+                <div class="cartao-texto">
+                    <h3>Relacionamento Comunitário</h3>
+                    <p>Oportunidade para profissionais da empresa (médicos, nutricionistas, etc.) ministrarem palestras voluntárias, reforçando a imagem da marca como promotora de saúde e cuidado comunitário[cite: 358].</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="valores">
+            <div class="valor-container">
+                <h2>Valores e Captação (Lei de Incentivo ao Esporte)</h2>
+                <div class="valor-grid">
+                    <div class="valor-item">
+                        <h3>Total Aprovado para Captação</h3>
+                        <p class="valor">R$ 300.000,00</p>
+                    </div>
+                    <div class="valor-item">
+                        <h3>Saldo a Captar</h3>
+                        <p class="valor">R$ 300.000,00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="reconhecimentos">
+            <div class="center-title"><h2 class="titulo-seccao">Reconhecimentos do Proponente</h2></div>
+             <div class="grelha">
+                <div class="cartao-texto">
+                    <h3>Amigo do Esporte</h3>
+                    <p>Concedido pela Prefeitura Municipal de Salvador em Dezembro de 2015[cite: 209].</p>
+                </div>
+                 <div class="cartao-texto">
+                    <h3>Melhor Gestão Esportiva</h3>
+                    <p>Concedido pela Superintendência de Esportes da Bahia (SUDESB) em 2015[cite: 210].</p>
+                </div>
+             </div>
+        </section>
+
+        <footer>
+            <div class="center-title"><h2 class="titulo-seccao">Informações do Proponente</h2></div>
+            <p>
+                <strong>Proponente:</strong> CLUBE DOS TENISTAS DA BAHIA (CTB) [cite: 183] <br>
+                <strong>CNPJ:</strong> 23.146.328/0001-16 [cite: 189] | <strong>Website:</strong> ctb-ba.com.br [cite: 207] <br>
+                <strong>Paulo Carneiro (Responsável):</strong> <a href="mailto:paulo@ctb-ba.com.br">paulo@ctb-ba.com.br</a> | WhatsApp: (71) 98530-4903 [cite: 191, 185, 195]
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
