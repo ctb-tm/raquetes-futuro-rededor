@@ -15,7 +15,7 @@
             --cor-texto-escuro: #2c3e50;
             --cor-texto-claro: #ffffff;
             --cor-fundo: #f4f4f9;
-            --cor-azul-marinho: #0d1b2a; /* Novo: Azul marinho escuro para a página final */
+            --cor-azul-marinho: #0d1b2a;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,8 +37,11 @@
         header { text-align: center; padding-bottom: 1.5rem; margin-bottom: 2rem; }
         
         header .imagem-principal {
-            width: 100%; height: 250px; object-fit: cover;
-            border-radius: 10px; margin-bottom: 1.5rem;
+            width: 100%;
+            height: 180px; /* ALTERADO: Altura da imagem do cabeçalho reduzida, como solicitado. */
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
             background-color: #e0e0e0;
         }
 
@@ -96,22 +99,17 @@
         footer a { color: var(--cor-primaria); text-decoration: none; font-weight: 600; }
         footer a:hover { text-decoration: underline; }
 
-        /* NOVO: Estilos para a terceira página */
         #pagina-3.container-a4 {
-            padding: 0; /* Remove o padding para o box ocupar todo o espaço */
+            padding: 0;
         }
         .pagina-final-box {
-            width: 100%;
-            height: 100%;
+            width: 100%; height: 100%;
             background-color: var(--cor-azul-marinho);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 8px; /* Mantém o raio no modo ecrã */
+            display: flex; justify-content: center; align-items: center;
+            border-radius: 8px;
         }
         .imagem-final {
-            max-width: 70%;
-            max-height: 70%;
+            max-width: 70%; max-height: 70%;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
@@ -124,11 +122,9 @@
                 page-break-after: always;
             }
             .container-a4:last-child { page-break-after: avoid; }
-            #pagina-3.container-a4 {
-                padding: 0; /* Garante que o box azul ocupe a página inteira na impressão */
-            }
+            #pagina-3.container-a4 { padding: 0; }
             .pagina-final-box { border-radius: 0; }
-            header .imagem-principal { height: 180px; }
+            header .imagem-principal { height: 180px; } /* Altura já estava correta para impressão */
             .header-titulo .logo-ctb { height: 60px; }
             .header-titulo h1 { font-size: 22pt; }
             .titulo-seccao { font-size: 16pt; }
