@@ -36,13 +36,14 @@
 
         header { text-align: center; padding-bottom: 1.5rem; margin-bottom: 2rem; }
         
+        /* CORRIGIDO: Estilo da imagem do cabeçalho para garantir que não haja cortes. */
         header .imagem-principal {
-            width: 80%;
-            height: 140px; /* ALTERADO: Altura da imagem do cabeçalho reduzida, como solicitado. */
-            object-fit: cover;
+            max-height: 180px; /* Define a altura MÁXIMA, sem forçar a dimensão. */
+            max-width: 100%;   /* Garante que a imagem não exceda a largura do contentor. */
+            width: auto;       /* A largura ajusta-se automaticamente para manter a proporção. */
+            height: auto;      /* A altura ajusta-se automaticamente para manter a proporção. */
             border-radius: 10px;
             margin-bottom: 1.5rem;
-            background-color: #e0e0e0;
         }
 
         .header-titulo {
@@ -124,7 +125,7 @@
             .container-a4:last-child { page-break-after: avoid; }
             #pagina-3.container-a4 { padding: 0; }
             .pagina-final-box { border-radius: 0; }
-            header .imagem-principal { height: 180px; } /* Altura já estava correta para impressão */
+            header .imagem-principal { max-height: 180px; } 
             .header-titulo .logo-ctb { height: 60px; }
             .header-titulo h1 { font-size: 22pt; }
             .titulo-seccao { font-size: 16pt; }
